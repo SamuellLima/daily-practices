@@ -1,0 +1,35 @@
+Desafio: O Vencedor da Enquete 🗳️
+O Cenário:
+Você foi contratado para apurar rapidamente os votos de uma enquete online sobre a linguagem de programação favorita da galera. Você recebeu os votos em uma lista, mas ela está toda desorganizada.
+
+Sua Missão:
+Escrever uma função em Python chamada apurar_votos que recebe uma lista de strings (os votos) e retorna o nome do vencedor.
+
+Requisitos:
+
+A função deve receber uma lista como argumento. Ex: ['Python', 'JavaScript', 'Python', 'C++', 'Python', 'JavaScript'].
+
+Ela deve contar os votos para cada "candidato" (cada linguagem).
+
+O vencedor é o candidato com o maior número de votos.
+
+A Regra Crucial: Se houver um empate no primeiro lugar, a função deve retornar a string "EMPATE".
+
+A função deve retornar apenas uma string: o nome do vencedor ou "EMPATE".
+
+Exemplos para Testar:
+
+Entrada: votos1 = ['Python', 'JavaScript', 'Python', 'C++', 'Python', 'JavaScript']
+
+Saída Esperada: 'Python' (Python: 3 votos, JavaScript: 2, C++: 1)
+
+Entrada: votos2 = ['Gato', 'Cachorro', 'Cachorro', 'Gato', 'Peixe']
+
+Saída Esperada: 'EMPATE' (Gato: 2 votos, Cachorro: 2 votos)
+
+Entrada: votos3 = ['Zul', 'Xuxa', 'Zul', 'Zul', 'Xuxa']
+
+Saída Esperada: 'Zul' (Zul: 3 votos, Xuxa: 2 votos)
+
+
+***Desafio sugerido pelo Gemini***
