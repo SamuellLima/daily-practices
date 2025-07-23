@@ -1,0 +1,45 @@
+# Desafio 002: Automação de Login e Verificação de Produtos
+
+## 🎯 Objetivo do Desafio
+
+Desenvolver um script em Python utilizando **Selenium** para automatizar o processo de login no site de demonstração "Sauce Demo" e verificar se a página de inventário de produtos é carregada com os itens esperados.
+
+## 📋 Requisitos e Passo a Passo
+
+O script deve seguir a seguinte lógica de automação:
+
+1.  **Navegação e Preenchimento:**
+    * Abrir o navegador e navegar para a página de login.
+    * Localizar os campos de usuário e senha e preenchê-los com as credenciais fornecidas.
+    * Clicar no botão de login.
+
+2.  **Validação da Página de Destino:**
+    * Após o login, verificar se a URL do navegador corresponde à página de inventário (`/inventory.html`).
+    * Validar se um elemento chave da página, como o título "Products", está visível, confirmando o carregamento correto da página.
+
+3.  **Verificação do Conteúdo:**
+    * Extrair os nomes de todos os produtos listados na página.
+    * Verificar se um produto específico (ex: "Sauce Labs Backpack") está presente na lista de nomes extraídos.
+
+4.  **Relatório Final:**
+    * O script deve imprimir uma mensagem clara no console indicando o sucesso ou falha do teste.
+
+## 🛠️ Ferramentas e Credenciais
+
+* **Linguagem:** Python
+* **Bibliotecas:** `selenium`
+* **Página para Teste:** `https://www.saucedemo.com`
+* **Usuário:** `standard_user`
+* **Senha:** `secret_sauce`
+
+## ✅ Critério de Sucesso
+
+O script deve executar sem erros, realizar o login e imprimir no console uma mensagem final de sucesso, como: **"✅ TESTE PASSOU: Login realizado com sucesso e o produto 'Sauce Labs Backpack' foi encontrado."**
+
+## ⭐ Pontos de Bônus (Mentalidade de Qualidade)
+
+* **Robustez:** Utilize esperas explícitas (`WebDriverWait`) em vez de esperas implícitas (`time.sleep()`) para aguardar os elementos carregarem na página. Isso torna o teste mais rápido e confiável.
+* **Tratamento de Erros:** Adicione blocos `try...finally` para garantir que o navegador seja fechado (`driver.quit()`) mesmo que ocorra um erro durante o teste.
+* **Organização:** Estruture seu código em funções claras (ex: `fazer_login()`, `verificar_produtos()`) para melhorar a legibilidade e a manutenção.
+
+**Gerado pelo Gemini**
