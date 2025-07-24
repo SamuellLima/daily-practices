@@ -1,0 +1,31 @@
+# Desafio 003: O Normalizador de Dados 🧹
+
+## Cenário
+
+No dia a dia, é comum receber dados de teste de várias fontes, e muitas vezes eles vêm em formatos inconsistentes. Antes de usar esses dados em um teste automatizado (seja para preencher um formulário ou para consultar um banco de dados), eles precisam ser limpos e padronizados.
+
+Este desafio foca nessa tarefa essencial de "limpeza de dados".
+
+## 🎯 Objetivo do Desafio
+
+Criar uma função em Python chamada `normalizar_telefone` que recebe uma `string` representando um número de telefone em qualquer formato e a retorna contendo apenas os dígitos numéricos, pronta para ser usada.
+
+## 📋 Requisitos
+
+* A função deve se chamar `normalizar_telefone` e aceitar um argumento do tipo `string`.
+* O retorno da função deve ser uma `string` contendo apenas os caracteres numéricos (`0` a `9`).
+* Todos os seguintes caracteres devem ser removidos da string de entrada: `(`, `)`, `-`, `.`, e espaços em branco (` `).
+
+## Exemplos
+
+| Entrada | Saída Esperada |
+| :--- | :--- |
+| `"(35) 99999-9999"` | `"35999999999"` |
+| `"35988887777"` | `"35988887777"` |
+| `" 35.91234.5678 "`| `"35912345678"` |
+
+## ⭐ Ponto de Bônus
+
+Para um desafio extra, tente implementar a solução em uma única linha de código (dentro da função), demonstrando uma abordagem mais "Pythônica".
+
+#Desafio gerado por IA (Gemini)
