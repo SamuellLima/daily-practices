@@ -1,0 +1,45 @@
+# Desafio 004: O Inversor de Palavras Seletivo
+
+## 🎯 O Desafio
+
+**Desafio proposto diretamente por Miguel Dias**
+
+O objetivo é criar uma função que aplica uma "regra de leitura reversa" em uma frase, invertendo apenas as palavras consideradas "longas", enquanto mantém a estrutura geral da frase completamente intacta.
+
+## 📜 O Cenário
+
+Você está trabalhando em um sistema que precisa aplicar uma regra de formatação especial em textos para criar um efeito estilístico ou uma forma de codificação simples. A regra é a seguinte: toda palavra com 5 ou mais letras deve ser escrita de trás para frente. Palavras mais curtas, assim como a pontuação e os espaços, devem ser mantidas em suas posições originais.
+
+## 📋 Requisitos
+
+1.  Crie uma função que recebe uma `string` (uma frase) como argumento.
+2.  A função deve percorrer a frase e identificar cada palavra.
+3.  Se uma palavra tiver **5 ou mais letras**, ela deve ser invertida.
+4.  Se uma palavra tiver **menos de 5 letras**, ela deve permanecer inalterada.
+5.  Toda a pontuação (`,`, `.`, `!`, `?`, etc.) e os espaços devem ser preservados em suas posições originais.
+
+## ✅ Exemplos para Testar
+
+| Entrada | Saída Esperada |
+| :--- | :--- |
+| `"Este é um desafio de programação"` | `"Este é um oifased de oãçamargorp"` |
+| `"Olá mundo, como vai você?"` | `"Olá odnum, como vai êcov?"` |
+| `"Isto é fácil!"` | `"Isto é licáf!"` |
+| `"Python é legal"` | `"nohtyP é lagel"` |
+
+
+## ⭐ Ponto de Bônus
+
+Faça a função lidar corretamente com palavras que contenham hifens (ex: "guarda-chuva" deve ser tratado como uma única palavra e invertido como "avuhc-adraug").
+
+## 💡 Dicas (Opcional)
+
+<details>
+  <summary> Clique para ver as dicas </summary>
+  
+  * Para separar a frase em palavras, o método de string `.split()` pode ser um bom ponto de partida.
+  * Para inverter uma palavra, você pode usar a técnica de fatiamento de string `palavra[::-1]`.
+  * Lidar com a pontuação é a parte mais complicada. Pense em como você pode verificar se o último caractere de uma "palavra" (após o split) é na verdade uma pontuação. Se for, talvez você precise tratar a palavra e a pontuação separadamente.
+
+</details>
+
