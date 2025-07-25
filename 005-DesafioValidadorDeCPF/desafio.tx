@@ -1,0 +1,60 @@
+# Desafio 005: Validador de CPF em JavaScript
+
+## Cenário
+
+Em qualquer sistema brasileiro que lida com dados de usuários, a validação de um CPF é uma rotina essencial. Ela previne erros de digitação e a inserção de dados claramente inválidos no sistema, garantindo uma maior integridade dos dados. Sua tarefa é criar a lógica de validação que poderia ser usada tanto no backend (Node.js) quanto no frontend.
+
+## 🎯 Objetivo do Desafio
+
+Desenvolver uma função em JavaScript chamada `validarCPF` que recebe uma `string` contendo um CPF e retorna `true` se o CPF for válido e `false` caso contrário.
+
+## 📋 Requisitos (A Lógica de Validação)
+
+Um CPF é considerado válido se passar por todas as etapas a seguir:
+
+1.  **Limpeza:** A função deve primeiro remover todos os caracteres não numéricos. Um CPF como `"123.456.789-00"` deve se tornar `"12345678900"`.
+
+2.  **Validações Iniciais:**
+    * A string limpa deve ter **exatamente 11 dígitos**. Se tiver mais ou menos, é inválida.
+    * Deve-se verificar se todos os dígitos são iguais (ex: "11111111111"). Se forem, o CPF é considerado inválido.
+
+3.  **Cálculo do Primeiro Dígito Verificador (o 10º dígito):**
+    * Pegue os 9 primeiros dígitos do CPF.
+    * Multiplique cada um por um peso, começando em 10 e diminuindo até 2 (o primeiro dígito por 10, o segundo por 9, e assim por diante).
+    * Some todos os resultados dessas multiplicações.
+    * Calcule o resto da divisão dessa soma por 11 (`resto = soma % 11`).
+    * O dígito verificador será `11 - resto`. Se o resultado for 10 ou 11, o dígito é `0`.
+    * Compare o dígito calculado com o 10º dígito do CPF. Se forem diferentes, o CPF é inválido.
+
+4.  **Cálculo do Segundo Dígito Verificador (o 11º dígito):**
+    * Pegue os 10 primeiros dígitos do CPF (incluindo o primeiro dígito verificador que você acabou de validar).
+    * Multiplique cada um por um peso, começando em 11 e diminuindo até 2.
+    * Repita o mesmo processo de soma, cálculo do resto da divisão por 11 e cálculo do dígito final.
+    * Compare o dígito calculado com o 11º dígito do CPF. Se forem diferentes, o CPF é inválido.
+
+5.  **Resultado Final:**
+    * Se o CPF passar por todas as verificações acima, a função deve retornar `true`.
+
+## ✅ Exemplos para Testar
+
+| Entrada | Saída Esperada | Motivo |
+| :--- | :--- | :--- |
+| `"111.444.777-05"` | `true` | CPF válido |
+| `"000.000.000-00"` | `false` | Todos os dígitos são iguais |
+| `"123.456.789-00"` | `false`| Dígitos verificadores incorretos |
+| `"123456789"` | `false`| Menos de 11 dígitos |
+
+## ⭐ Ponto de Bônus
+
+Transforme seu script em um pequeno módulo Node.js que exporta a função `validarCPF` (`module.exports = validarCPF;`). Crie um arquivo de teste separado (`teste.js`) que importa a função (`require('./validador.js')`) e a testa com vários CPFs, imprimindo os resultados no console.
+
+## 💡 Dicas (Opcional)
+
+<details>
+  <summary>Clique para ver as dicas</summary>
+  
+  * **Limpeza:** Em JavaScript, `cpf.replace(/\D/g, '')` é uma forma muito eficiente com Expressões Regulares de remover tudo que não for dígito.
+  * **Conversão:** Lembre-se de converter os caracteres da string para números antes de fazer os cálculos matemáticos. `parseInt()` ou `Number()` funcionam bem.
+  * **Cálculo:** O algoritmo pode parecer complexo, mas implemente-o passo a passo. Crie uma função auxiliar para o cálculo do dígito, já que a lógica se repete.
+
+</details>
