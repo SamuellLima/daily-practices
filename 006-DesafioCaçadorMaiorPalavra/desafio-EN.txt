@@ -1,0 +1,34 @@
+---
+#Challenge 006
+
+---
+
+## 🇬🇧 Challenge: The Longest Word Hunter 🏹
+
+### Scenario
+
+You are analyzing a text and need to find the longest word, either for a statistical study or to highlight it in a data visualization. Your task is to create a function that performs this search efficiently.
+
+### Your Mission
+
+Write a **JavaScript** function named `findLongestWord` that takes a `string` (a sentence) as input and returns the longest word contained within it.
+
+### Requirements
+
+1.  The function must be named `findLongestWord` and accept one `string` argument.
+2.  It should return a single `string` (the longest word).
+3.  For simplicity, punctuation can be considered part of the word (e.g., the word "quick!" has 6 characters).
+4.  If there are two or more words with the same maximum length, return the **first** one that appears in the sentence.
+
+### Examples
+
+| Input | Expected Output |
+| :--- | :--- |
+| `"The journey of a thousand miles begins with a single step"` | `"thousand"` |
+| `"JavaScript is a powerful programming language"` | `"programming"` |
+| `"Go fast and win the race"` | `"fast"` |
+
+
+### ⭐ Bonus Point
+
+Can you solve it in a more functional way, perhaps in a single line, using Array methods like `.split()`, `.reduce()`, or `.sort()`?

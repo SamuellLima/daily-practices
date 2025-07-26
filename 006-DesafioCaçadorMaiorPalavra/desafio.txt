@@ -1,0 +1,34 @@
+# Desafio 006: Lógica de Strings em JavaScript
+
+---
+
+## 🇧🇷 Desafio: O Caçador da Maior Palavra 🏹
+
+### Cenário
+
+Você está analisando um texto e precisa encontrar a palavra mais longa, seja para um estudo estatístico ou para destacá-la em uma visualização de dados. Sua tarefa é criar uma função que faça essa busca de forma eficiente.
+
+### Sua Missão
+
+Escrever uma função em **JavaScript** chamada `findLongestWord` que recebe uma `string` (uma frase) e retorna a palavra mais longa contida nela.
+
+### Requisitos
+
+1.  A função deve se chamar `findLongestWord` e aceitar um argumento do tipo `string`.
+2.  O retorno da função deve ser uma `string` (a palavra mais longa).
+3.  Para simplificar, a pontuação pode ser considerada parte da palavra (ex: a palavra "rápido!" tem 7 caracteres).
+4.  Se houver duas ou mais palavras com o mesmo comprimento máximo, retorne a **primeira** que aparecer na frase.
+
+### Exemplos
+
+| Entrada | Saída Esperada |
+| :--- | :--- |
+| `"O rato roeu a roupa do rei de Roma"` | `"roupa"` |
+| `"JavaScript é uma linguagem de programação poderosa"` | `"programação"` |
+| `"O sol brilha forte hoje"` | `"brilha"` |
+
+
+### ⭐ Ponto de Bônus
+
+Consegue resolver o desafio de uma forma mais funcional, talvez em uma única linha, usando os métodos de Array como `.split()`, `.reduce()` ou `.sort()`?
+
