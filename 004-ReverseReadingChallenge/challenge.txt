@@ -1,0 +1,41 @@
+# Challenge 004: The Selective Word Inverter
+
+## 🎯 The Challenge
+
+**Challenge proposed directly by Miguel Dias**
+
+The objective is to create a function that applies a "reverse reading rule" to a sentence, inverting only the words considered "long," while keeping the overall structure of the sentence completely intact.
+
+## 📜 The Scenario
+
+You are working on a system that needs to apply a special formatting rule to texts to create a stylistic effect or a simple form of encoding. The rule is as follows: every word with 5 or more letters must be written backward. Shorter words, as well as punctuation and spaces, must be kept in their original positions.
+
+## 📋 Requirements
+
+1.  Create a function that receives a `string` (a sentence) as an argument.
+2.  The function must iterate through the sentence and identify each word.
+3.  If a word has **5 or more letters**, it must be inverted.
+4.  If a word has **fewer than 5 letters**, it must remain unchanged.
+5.  All punctuation (`,`, `.`, `!`, `?`, etc.) and spaces must be preserved in their original positions.
+
+## ✅ Examples to Test
+
+| Input | Expected Output |
+| :--- | :--- |
+| `"Este é um desafio de programação"` | `"Este é um oifased de oãçamargorp"` |
+| `"Olá mundo, como vai você?"` | `"Olá odnum, como vai êcov?"` |
+| `"Isto é fácil!"` | `"Isto é licáf!"` |
+| `"Python é legal"` | `"nohtyP é lagel"` |
+
+
+## ⭐ Bonus Point
+
+Make the function correctly handle words that contain hyphens (e.g., "guarda-chuva" should be treated as a single word and inverted as "avuhc-adraug").
+
+## 💡 Tips (Optional)
+
+<details>
+  <summary> Click to see the tips </summary>
+  
+  * To split the sentence into words, the string method `.split()` can be a good starting point.
+  * To reverse

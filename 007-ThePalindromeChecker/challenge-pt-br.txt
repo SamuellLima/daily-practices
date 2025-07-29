@@ -1,0 +1,25 @@
+# Desafio 07: O Verificador de Palíndromos
+
+## Cenário
+
+Você precisa criar uma pequena ferramenta de texto que verifica se uma palavra ou frase é um palíndromo. Palíndromos são palavras ou frases que podem ser lidas da mesma forma da esquerda para a direita e da direita para a esquerda, ignorando espaços, pontuações e acentuação.
+
+## Sua Missão
+
+Escrever uma função em Python chamada `is_palindrome` que recebe uma `string` e retorna `True` se ela for um palíndromo e `False` caso contrário.
+
+## Requisitos
+
+1.  A função deve ignorar se as letras são maiúsculas ou minúsculas (case-insensitive).
+2.  A função deve ignorar espaços e qualquer tipo de pontuação.
+3.  O retorno deve ser um booleano (`True` ou `False`).
+
+## Exemplos
+
+| Entrada | Saída Esperada |
+| :--- | :--- |
+| `"ovo"` | `True` |
+| `"Ame a ema"` | `True` |
+| `"Anotaram a data da maratona"` | `True`|
+| `"palindromo"` | `False` |
+| `"A base do teto desaba."` | `True` |

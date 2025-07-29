@@ -1,0 +1,35 @@
+Challenge: The Poll Winner 🗳️
+The Scenario:
+You have been hired to quickly tally the votes from an online poll about people's favorite programming language. You received the votes in a list, but it's completely disorganized.
+
+Your Mission:
+Write a Python function called `tally_votes` that receives a list of strings (the votes) and returns the name of the winner.
+
+Requirements:
+
+The function must receive a list as an argument. Ex: ['Python', 'JavaScript', 'Python', 'C++', 'Python', 'JavaScript'].
+
+It must count the votes for each "candidate" (each language).
+
+The winner is the candidate with the highest number of votes.
+
+The Crucial Rule: If there is a tie for first place, the function must return the string "TIE".
+
+The function must return only one string: the name of the winner or "TIE".
+
+Examples to Test:
+
+Input: votes1 = ['Python', 'JavaScript', 'Python', 'C++', 'Python', 'JavaScript']
+
+Expected Output: 'Python' (Python: 3 votes, JavaScript: 2, C++: 1)
+
+Input: votes2 = ['Cat', 'Dog', 'Dog', 'Cat', 'Fish']
+
+Expected Output: 'TIE' (Cat: 2 votes, Dog: 2 votes)
+
+Input: votes3 = ['Zul', 'Xuxa', 'Zul', 'Zul', 'Xuxa']
+
+Expected Output: 'Zul' (Zul: 3 votes, Xuxa: 2 votes)
+
+
+***Challenge suggested by Gemini***

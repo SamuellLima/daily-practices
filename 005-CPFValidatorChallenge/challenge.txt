@@ -1,0 +1,60 @@
+# Challenge 005: CPF Validator in JavaScript
+
+## Scenario
+
+In any Brazilian system that handles user data, CPF validation is an essential routine. It prevents typing errors and the insertion of clearly invalid data into the system, ensuring greater data integrity. Your task is to create the validation logic that could be used on both the backend (Node.js) and the frontend.
+
+## 🎯 Challenge Objective
+
+Develop a JavaScript function called `validateCPF` that receives a `string` containing a CPF and returns `true` if the CPF is valid and `false` otherwise.
+
+## 📋 Requirements (The Validation Logic)
+
+A CPF is considered valid if it passes all the following steps:
+
+1.  **Cleaning:** The function must first remove all non-numeric characters. A CPF like `"123.456.789-00"` must become `"12345678900"`.
+
+2.  **Initial Validations:**
+    * The cleaned string must have **exactly 11 digits**. If it has more or less, it is invalid.
+    * It must be checked if all digits are the same (e.g., "11111111111"). If they are, the CPF is considered invalid.
+
+3.  **Calculation of the First Verification Digit (the 10th digit):**
+    * Take the first 9 digits of the CPF.
+    * Multiply each one by a weight, starting from 10 and decreasing to 2 (the first digit by 10, the second by 9, and so on).
+    * Sum all the results of these multiplications.
+    * Calculate the remainder of the division of this sum by 11 (`remainder = sum % 11`).
+    * The verification digit will be `11 - remainder`. If the result is 10 or 11, the digit is `0`.
+    * Compare the calculated digit with the 10th digit of the CPF. If they are different, the CPF is invalid.
+
+4.  **Calculation of the Second Verification Digit (the 11th digit):**
+    * Take the first 10 digits of the CPF (including the first verification digit you just validated).
+    * Multiply each one by a weight, starting from 11 and decreasing to 2.
+    * Repeat the same process of summing, calculating the remainder of the division by 11, and calculating the final digit.
+    * Compare the calculated digit with the 11th digit of the CPF. If they are different, the CPF is invalid.
+
+5.  **Final Result:**
+    * If the CPF passes all the checks above, the function must return `true`.
+
+## ✅ Examples to Test
+
+| Input | Expected Output | Reason |
+| :--- | :--- | :--- |
+| `"111.444.777-05"` | `true` | Valid CPF |
+| `"000.000.000-00"` | `false` | All digits are the same |
+| `"123.456.789-00"` | `false`| Incorrect verification digits |
+| `"123456789"` | `false`| Less than 11 digits |
+
+## ⭐ Bonus Point
+
+Transform your script into a small Node.js module that exports the `validateCPF` function (`module.exports = validateCPF;`). Create a separate test file (`test.js`) that imports the function (`require('./validator.js')`) and tests it with various CPFs, printing the results to the console.
+
+## 💡 Tips (Optional)
+
+<details>
+  <summary>Click to see the tips</summary>
+  
+  * **Cleaning:** In JavaScript, `cpf.replace(/\D/g, '')` is a very efficient way with Regular Expressions to remove anything that isn't a digit.
+  * **Conversion:** Remember to convert the string characters to numbers before doing the mathematical calculations. `parseInt()` or `Number()` work well.
+  * **Calculation:** The algorithm may seem complex, but implement it step-by-step. Consider creating a helper function for the digit calculation, as the logic is repeated.
+
+</details>

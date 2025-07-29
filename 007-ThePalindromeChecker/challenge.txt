@@ -1,0 +1,25 @@
+# Challenge 07: The Palindrome Checker
+
+## Scenario
+
+You need to create a small text utility that checks if a word or phrase is a palindrome. Palindromes are words or phrases that read the same forwards and backwards, ignoring spaces, punctuation, and capitalization.
+
+## Your Mission
+
+Write a Python function named `is_palindrome` that takes a `string` as input and returns `True` if it is a palindrome and `False` otherwise.
+
+## Requirements
+
+1.  The function must ignore case (uppercase/lowercase).
+2.  The function must ignore spaces and punctuation.
+3.  The return value must be a boolean (`True` or `False`).
+
+## Examples
+
+| Input | Expected Output |
+| :--- | :--- |
+| `"level"` | `True` |
+| `"A man, a plan, a canal: Panama"` | `True` |
+| `"Was it a car or a cat I saw?"` | `True` |
+| `"palindrome"` | `False` |
+| `"No lemon, no melon."` | `True` |

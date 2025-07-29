@@ -1,0 +1,37 @@
+# Challenge 002: Login Automation and Product Verification
+
+## 🎯 Challenge Objective
+
+Develop a Python script using **Selenium** to automate the login process on the "Sauce Demo" demonstration website and verify that the product inventory page is loaded with the expected items.
+
+## 📋 Requirements and Step-by-Step
+
+The script must follow this automation logic:
+
+1.  **Navigation and Filling:**
+    * Open the browser and navigate to the login page.
+    * Locate the username and password fields and fill them with the provided credentials.
+    * Click the login button.
+
+2.  **Destination Page Validation:**
+    * After logging in, verify that the browser's URL corresponds to the inventory page (`/inventory.html`).
+    * Validate that a key element of the page, such as the "Products" title, is visible, confirming the page loaded correctly.
+
+3.  **Content Verification:**
+    * Extract the names of all products listed on the page.
+    * Check if a specific product (e.g., "Sauce Labs Backpack") is present in the extracted list of names.
+
+4.  **Final Report:**
+    * The script should print a clear message to the console indicating the success or failure of the test.
+
+## 🛠️ Tools and Credentials
+
+* **Language:** Python
+* **Libraries:** `selenium`
+* **Test Page:** `https://www.saucedemo.com`
+* **Username:** `standard_user`
+* **Password:** `secret_sauce`
+
+## ✅ Success Criteria
+
+The script must execute

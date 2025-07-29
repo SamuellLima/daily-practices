@@ -1,27 +1,27 @@
-# Minhas práticas diárias
+# My Daily Practices
 
-Este repositório funciona como um diário público de estudos e práticas em diversos tipos de linguagem, porém com maior foco em Python e JS. Aqui eu documento minha jornada de aprendizado, bem como minha evolução resolvendo um ou dois desafios de programação por dia, me possibilitando acompanhar minha própria evolução.
+This repository serves as a public journal of studies and practices in various types of languages, with a primary focus on Python and JS. Here, I document my learning journey, as well as my progress by solving one or two programming challenges per day, allowing me to track my own evolution.
 
-## 🐱‍💻 Sobre o Projeto
+## 🐱‍💻 About the Project
 
-Como um desenvolvedor que utiliza da programação como um meio para sobreviver, reconheço a importância de manter os fundamentos afiados. Por isso, aqui dedico um tempo diário para a **prática deliberada**, buscando resolver um desafio por dia, focando em resolver pequenos problemas que estimulam o raciocínio lógico e aprofundam meu conhecimento em cada linguagem a qual me proponho a aprender.
+As a developer who uses programming as a means to survive, I recognize the importance of keeping the fundamentals sharp. Therefore, I dedicate daily time here to **deliberate practice**, aiming to solve one challenge per day, focusing on small problems that stimulate logical reasoning and deepen my knowledge in each language I set out to learn.
 
-O objetivo principal não é a perfeição, mas a **consistência** e o **progresso**.
+The main goal is not perfection, but **consistency** and **progress**.
 
-## ✝ Motivação
+## ✝ Motivation
 
-* **Registrar meu progresso** de forma visível (o famigerado e almejado "muro verde" do GitHub!).
-* **Construir o hábito** da prática consistente, um pouco a cada dia, a prática leva a perfeição.
-* **Criar um portfólio vivo** que demonstra minha evolução pessoal e única como desenvolvedor, mesmo com pequenos desafios.
+* **To visibly track my progress** (the infamous and coveted "green wall" of GitHub!).
+* **To build the habit** of consistent practice—a little each day, as practice makes perfect.
+* **To create a living portfolio** that demonstrates my personal and unique evolution as a developer, even with small challenges.
 
-## 📂 Estrutura do Repositório
+## 📂 Repository Structure
 
-A estrutura se resume a apenas enumeração de cada desafio em sua própria pasta enumerada, contendo dentro de cada pasta um o desafio proposto e sua solução.
+The structure consists simply of an enumeration of each challenge in its own numbered folder, with each folder containing the proposed challenge and its solution.
 
-Por exemplo:
+For example:
 
-/001-DesafioVotacao
+/001-VotingChallenge
 │
-├── desafio.txt      (O enunciado do desafio proposto)
+├── challenge.txt    (The statement of the proposed challenge)
 │
-├── solucao.py       (O código com a solução a qual encontrei)
+├── solution.py      (The code with the solution I found)
