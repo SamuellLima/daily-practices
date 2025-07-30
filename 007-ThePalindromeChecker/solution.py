@@ -9,3 +9,4 @@ def is_palindrome(phrase: str):
         print(f'"{phrase}" is not a palindrome.') 
 
 is_palindrome("Was it a car or a cat I saw?")
+is_palindrome("No is palidrome")

@@ -1,0 +1,31 @@
+## 🇧🇷 Desafio 008: O Inversor de Dicionário
+
+### Cenário
+
+Você está trabalhando com um conjunto de dados que mapeia IDs de usuário para seus nomes de usuário. Para uma tarefa específica, você precisa criar uma busca reversa: encontrar o ID do usuário a partir do seu nome. Sua missão é criar uma função que "inverta" esse mapeamento.
+
+### Sua Missão
+
+Escrever uma função que recebe um dicionário e retorna um novo dicionário onde as chaves se tornam valores e os valores se tornam chaves.
+
+### Requisitos
+
+1.  A função deve aceitar um dicionário como argumento.
+2.  Ela deve retornar um novo dicionário com as chaves e valores trocados.
+3.  **A Regra Crucial:** Se houver valores duplicados no dicionário original (o que resultaria em chaves duplicadas no novo dicionário), a função deve agrupar as chaves originais em uma **lista**.
+
+### Exemplos
+
+* **Entrada:** `{'a': 1, 'b': 2, 'c': 3}`
+    * **Saída Esperada:** `{1: 'a', 2: 'b', 3: 'c'}`
+
+* **Entrada:** `{'Ana': 25, 'Bruno': 30, 'Carla': 25}`
+    * **Saída Esperada:** `{25: ['Ana', 'Carla'], 30: 'Bruno'}` (Note que 'Ana' e 'Carla' foram agrupados em uma lista sob a chave 25)
+
+* **Entrada:** `{'Maçã': 'Fruta', 'Banana': 'Fruta', 'Cenoura': 'Legume'}`
+    * **Saída Esperada:** `{'Fruta': ['Maçã', 'Banana'], 'Legume': 'Cenoura'}`
+
+
+### ⭐ Ponto de Bônus
+
+Consegue resolver o desafio de forma mais concisa usando *Dictionary Comprehension* em Python?
