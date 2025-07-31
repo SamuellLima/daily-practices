@@ -1,0 +1,26 @@
+## 🇧🇷 Desafio: O Problema da Soma de Dois Números (Two Sum)
+
+### Cenário
+
+Você está trabalhando em um sistema financeiro e precisa encontrar duas transações em uma lista que, somadas, resultam em um valor alvo específico. Fazer isso de forma eficiente é crucial para a performance do sistema. Este é um problema de algoritmo clássico, frequentemente utilizado em entrevistas técnicas.
+
+### Sua Missão
+
+Escrever uma função que recebe uma lista (array) de números inteiros e um número "alvo". A função deve encontrar dois números **diferentes** na lista que somem exatamente o valor alvo. O retorno deve ser os **índices** (as posições) desses dois números.
+
+### Requisitos
+
+1.  A função deve aceitar uma lista de números e um número alvo como argumentos.
+2.  Ela deve retornar uma lista ou tupla contendo os **índices** dos dois números que somam o alvo.
+3.  Você pode assumir que cada entrada terá exatamente uma solução.
+4.  Você não pode usar o mesmo elemento duas vezes.
+
+### Exemplos
+
+| Entrada | Alvo | Saída Esperada |
+| :--- | :--- | :--- |
+| `numeros = [2, 7, 11, 15]` | `9` | `[0, 1]` |
+| `numeros = [3, 2, 4]` | `6` | `[1, 2]` |
+| `numeros = [3, 3]` | `6` | `[0, 1]` |
+
+by Gemini

@@ -1,0 +1,39 @@
+# Challenge 08: Dictionary/Object Inverter
+
+---
+
+## 🇬🇧 Challenge: The Dictionary Inverter
+
+### Scenario
+
+You are working with a dataset that maps user IDs to their usernames. For a specific task, you need to create a reverse lookup: find a user's ID based on their username. Your mission is to create a function that "inverts" this mapping.
+
+### Your Mission
+
+Write a function that takes a dictionary (in Python) or an object (in JavaScript) and returns a new one where the keys become values and the values become keys.
+
+### Requirements
+
+1.  The function must accept a dictionary/object as an argument.
+2.  It must return a new dictionary/object with the keys and values swapped.
+3.  **The Crucial Rule:** If there are duplicate values in the original dictionary (which would result in duplicate keys in the new one), the function must group the original keys into a **list/array**.
+
+### Examples
+
+* **Input:** `{'a': 1, 'b': 2, 'c': 3}`
+    * **Expected Output:** `{1: 'a', 2: 'b', 3: 'c'}`
+
+* **Input:** `{'Ana': 25, 'Bruno': 30, 'Carla': 25}`
+    * **Expected Output:** `{25: ['Ana', 'Carla'], 30: 'Bruno'}` (Note that 'Ana' and 'Carla' were grouped into a list under the key 25)
+
+* **Input:** `{'Apple': 'Fruit', 'Banana': 'Fruit', 'Carrot': 'Vegetable'}`
+    * **Expected Output:** `{'Fruit': ['Apple', 'Banana'], 'Vegetable': 'Carrot'}`
+
+
+### ⭐ Bonus Point
+
+Can you solve this concisely using a Dictionary Comprehension in Python or functional methods like `.reduce()` in JavaScript?
+
+---
+
+##Generate by Gemini
