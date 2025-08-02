@@ -1,0 +1,57 @@
+=======================================
+DESAFIO #10: CAÇADOR DE PALAVRAS
+=======================================
+
+OBJETIVO:
+Criar um script em Python que analisa um arquivo de texto para encontrar e listar as palavras mais utilizadas, ignorando pontuações e palavras comuns de preenchimento (stopwords) para obter um resultado mais significativo.
+
+---------------------------------------
+O DESAFIO:
+---------------------------------------
+
+O script deve ser capaz de realizar as seguintes tarefas, em ordem:
+
+1. LER O ARQUIVO: Abrir e ler todo o conteúdo de um arquivo de texto chamado `input.txt`.
+
+2. PADRONIZAR O TEXTO: Converter todo o texto para letras minúsculas para que palavras como "Sucesso" e "sucesso" sejam contadas como a mesma.
+
+3. LIMPAR O TEXTO: Remover todos os caracteres de pontuação (vírgulas, pontos, hífens, etc.), mantendo apenas as letras e os espaços.
+
+4. TOKENIZAR: Quebrar o texto limpo em uma lista de palavras individuais.
+
+5. FILTRAR AS STOPWORDS: Remover da lista todas as palavras que são consideradas "stopwords" (artigos, preposições, conjunções como "o", "de", "que", "para", etc.), utilizando a biblioteca NLTK para obter uma lista padrão para o português.
+
+6. CONTAR A FREQUÊNCIA: Calcular quantas vezes cada palavra restante aparece na lista filtrada.
+
+7. APRESENTAR O RESULTADO: Exibir de forma clara as 10 palavras mais comuns encontradas, junto com sua contagem, em ordem da mais frequente para a menos frequente.
+
+---------------------------------------
+HABILIDADES PRATICADAS:
+---------------------------------------
+
+* Manipulação de Arquivos (leitura de .txt).
+* Manipulação de Strings e Expressões Regulares (Regex) para limpeza de dados.
+* Estruturas de Dados: Dicionários (para contagem, via `collections.Counter`) e Conjuntos (para a lista de stopwords, garantindo performance).
+* List Comprehensions para filtragem eficiente de dados.
+* Uso de Bibliotecas Externas (NLTK para stopwords).
+* Organização de Código Limpo e Modular.
+
+---------------------------------------
+COMO EXECUTAR:
+---------------------------------------
+
+--- PREPARAÇÃO (só precisa ser feito uma vez) ---
+
+1. Instale as dependências:
+   No terminal, dentro da pasta deste desafio, execute o comando:
+   pip install -r requirements.txt
+
+2. Baixe os dados do NLTK:
+   Execute um terminal Python (digitando `python` ou `py` no seu terminal) e rode os seguintes comandos:
+   import nltk
+   nltk.download('stopwords')
+
+--- EXECUÇÃO ---
+
+Depois da preparação, para rodar o desafio, basta adicionar o path do seu .txt para a variavel e executar o script principal:
+python solution.py

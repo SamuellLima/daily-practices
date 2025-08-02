@@ -1,0 +1,57 @@
+=======================================
+CHALLENGE #10: WORD HUNTER
+=======================================
+
+OBJECTIVE:
+To create a Python script that analyzes a text file to find and list the most used words, ignoring punctuation and common filler words (stopwords) to obtain a more meaningful result.
+
+---------------------------------------
+THE CHALLENGE:
+---------------------------------------
+
+The script must be able to perform the following tasks, in order:
+
+1. READ THE FILE: Open and read the entire content of a text file named `input.txt`.
+
+2. STANDARDIZE THE TEXT: Convert all text to lowercase so that words like "Success" and "success" are counted as the same.
+
+3. CLEAN THE TEXT: Remove all punctuation characters (commas, periods, hyphens, etc.), keeping only letters and spaces.
+
+4. TOKENIZE: Break the clean text into a list of individual words.
+
+5. FILTER STOPWORDS: Remove from the list all words considered "stopwords" (articles, prepositions, conjunctions like "the", "a", "of", "for", etc.), using the NLTK library to get a standard list for the chosen language.
+
+6. COUNT THE FREQUENCY: Calculate how many times each remaining word appears in the filtered list.
+
+7. PRESENT THE RESULT: Clearly display the top 10 most common words found, along with their counts, in descending order from most frequent to least frequent.
+
+---------------------------------------
+SKILLS PRACTICED:
+---------------------------------------
+
+* File Handling (reading .txt files).
+* String Manipulation and Regular Expressions (Regex) for data cleaning.
+* Data Structures: Dictionaries (for counting, via `collections.Counter`) and Sets (for the stopword list, ensuring performance).
+* List Comprehensions for efficient data filtering.
+* Using External Libraries (NLTK for stopwords).
+* Clean and Modular Code Organization.
+
+---------------------------------------
+HOW TO RUN:
+---------------------------------------
+
+--- PREPARATION (only needs to be done once) ---
+
+1. Install dependencies:
+   In your terminal, inside this challenge's folder, run the command:
+   pip install -r requirements.txt
+
+2. Download NLTK data:
+   Run a Python terminal (by typing `python` or `py` in your main terminal) and execute the following commands:
+   import nltk
+   nltk.download('stopwords')
+
+--- EXECUTION ---
+
+After preparation, to run the challenge, simply add the path of your .txt to the variable and run the main script:
+python solution.py

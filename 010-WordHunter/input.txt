@@ -1,0 +1,4 @@
+Success is a sum of small efforts - repeated day after day. Python, one of the most popular programming languages, makes working with text much easier.
+In this challenge, the objective is to count words. Counting words may seem simple, but counting well requires attention.
+Attention to details, such as removing ratings and stopwords.
+We repeat: daily effort leads to success. Success, success, success!

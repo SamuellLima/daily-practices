@@ -1,0 +1,4 @@
+O sucesso é a soma de pequenos esforços - repetidos dia após dia. O Python, uma das linguagens de programação mais populares, facilita muito o trabalho com texto.
+Neste desafio, o objetivo é contar palavras. Contar palavras pode parecer simples, mas contar bem exige atenção.
+Atenção aos detalhes, como remover pontuação e palavras irrelevantes (stopwords).
+Repetimos: o esforço diário leva ao sucesso. Sucesso, sucesso, sucesso!
