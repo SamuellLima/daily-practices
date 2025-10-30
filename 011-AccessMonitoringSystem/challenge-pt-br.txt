@@ -1,0 +1,6 @@
+Access Log Monitor - Desafio de Código
+
+Objetivo:
+Construir uma ferramenta pequena em Python que analise logs de tentativas de login e detecte endereços IP suspeitos.
+
+

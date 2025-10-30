@@ -1,0 +1,4 @@
+Access Log Monitor - Coding Challenge
+
+Goal:
+Build a small Python tool that analyzes login attempt logs and detects suspicious IP addresses.
